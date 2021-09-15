@@ -1,0 +1,171 @@
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.burger {
+    display: block;
+    cursor: pointer;
+}
+
+.list-items{
+
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background: rgba(0, 0, 0, 0.7)url('../img/background-img.jpg');
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+}
+
+
+.navbar li a {
+    height: 85px;     
+}
+
+.nav-active{
+
+    transform: translateX(0%);
+}
+
+
+/* creating Animation  */
+
+@keyframes list-itemsFade{
+
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* .navbar finishis */
+
+
+.about-sec{
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+}
+
+.card-img{
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    margin-right: 0%;
+}
+
+/* this is home section  */
+
+
+
+.home h1{
+    padding-top: 128px
+}
+
+.home h4{
+
+    padding-top: 22px;
+}
+
+
+
+/* menu section */
+
+.menu-th-heading{
+
+    width: 100%;
+}
+
+.menu{
+
+    margin-top: 27px;
+
+}
+
+.menu-img{
+
+    width: 100%;
+    margin-right: 0%;
+}
+
+/* chef section  */
+
+.chef-img{
+
+    width: 336px;
+    margin-right: 0px;
+}
+
+.chef-name{
+
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.box{
+    width: 100%;
+}
+
+/* welcome section  */
+
+.welcome p{
+
+    width: 100%;
+}
+
+.paragraph{
+    width: 100%;
+}
+
+.special h6{
+
+    text-shadow: 4px 4px black
+}
+.special-p{
+
+    text-shadow: 4px 4px black
+}
+
+.footer{
+
+    margin-top: 40px;
+}
+
+@media only screen and (max-width: 376px ){
+
+    .menu-heading{
+
+        margin-top: 200px;
+    }
+
+};
+
+@media only screen and (min-width: 811px ){
+
+    .menu-heading{
+
+        margin-top: 60px;
+    }
+
+};
+
+
